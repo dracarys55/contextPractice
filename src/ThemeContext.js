@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 
-const ThemeContext = React.createContext();
+/* this is for class component, so need to export */
+export const ThemeContext = React.createContext();
 
 export function useTheme() {
   return useContext(ThemeContext);
